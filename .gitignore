@@ -1,1 +1,4 @@
 *.exe
+test.cpp
+.gitignore
+/.vscode

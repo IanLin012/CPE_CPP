@@ -4,18 +4,18 @@ using namespace std;
 
 int main()
 {
-	int t;
+	int t; // t = case amount
 	cin >> t;
 	getchar();
-	string s;
+	string s; // s = song
 	while(t--)
 	{
 		getline(cin, s);
-		char o[11] = "0000000000"; // o = original
+		char o[11] = "0000000000"; // o = original array
 		int count[10] = {0};
-		for(int a1=0 ; a1<s.size() ; a1++) // a = address
+		for(int a1=0 ; a1<s.size() ; a1++)
 		{
-			char f[11] = "0000000000"; // f = finger
+			char f[11] = "0000000000"; // f = finger press
 			switch(s[a1])
 			{
 				case'c':

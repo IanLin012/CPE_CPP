@@ -1,28 +1,30 @@
-#include <stdio.h>
-#include <math.h>
+#include <bits/stdc++.h>
 
-#define MAX 3000
+using namespace std;
 
 int main()
 {
     int n;
-    while(scanf("%d", &n) != EOF)
+    while(cin >> n)
     {
-        int key = 1;
+        int f = 1; // f = flag
         int data, lastdata;
-        int check[MAX] = {0};
+        int s[3000] = {0}; // s = sequence
         for(int i = 0 ; i < n ; i++)
         {
-            scanf("%d", &data);
-            if(i && key)
+            cin >> data;
+            if(i && (f==1))
             {
-                int differernce = abs(data - lastdata);
-                if(differernce < 1 || differernce > (n-1) || check[differernce] > 0)
-                key = 0;
-                check[differernce]++;
+                int d = abs(data - lastdata); // d = differernce
+                if(d < 1 || d > (n-1) || s[d] > 0)
+                f = 0;
+                s[d]++;
             }
             lastdata = data;
         }
-        printf("%s\n", key? "Jolly" : "Not jolly");
+        if(f == 1)
+            cout << "Jolly\n";
+        else
+            cout << "Not jolly\n";
     }
 }

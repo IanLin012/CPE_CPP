@@ -1,3 +1,5 @@
+// 一星必考題
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -49,7 +51,7 @@ int main()
 				if(o[a2]=='0' && f[a2]=='1')
 					count[a2]++;
 			}
-			strcpy(o, f);
+			strcpy(o, f); // 複製字串
 		}
 		cout << count[0];
 		for(int a=1 ; a<10 ; a++)

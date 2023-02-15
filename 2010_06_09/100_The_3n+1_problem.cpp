@@ -4,42 +4,49 @@
 
 using namespace std;
 
-bool compare(long long x, long long y)
-{
-    return x > y;
-}
 int main()
 {
     long long i, j;
     while(cin >> i >> j)
     {
         cout << i << " " << j << " ";
-        long long arr[] = {0};
-        for(long long n=i ; n<=j ; n++)
+        long long ans = 0;
+        if(i <= j)
         {
-            for(long long a1=0 ; a1<j-i ; a1++)
+            for(; i<=j ; i++)
             {
-                long long count[] = {0};
-                long long a2=0;
-                long long c=i;
-                while(c!=1)
+                long long count = 1;
+                long long n = i;
+                while(n != 1)
                 {
-                    if(c%2 == 1)
-                        c = 3*c+1;
+                    if(n%2 == 1)
+                        n = 3*n + 1;
                     else
-                        c = c/2;
-                    a1++;
-                    count[a2] = c;
+                        n /= 2;
+                    count++;
                 }
-                for(long long a2=0 ; a2<sizeof(count) ; a2++)
-                {
-                    if(count[a2] == sizeof(count))
-                        arr[a1] = count[a2];
-                }
+                ans = max(ans, count);
             }
+            cout << ans << endl;
         }
-        sort(arr, arr+sizeof(arr), compare);
-        cout << arr[0] << endl;
+        else if(i > j)
+        {
+            for(; j<=i ; j++)
+            {
+                long long count = 1;
+                long long n = j;
+                while(n != 1)
+                {
+                    if(n%2 == 1)
+                        n = 3*n + 1;
+                    else
+                        n /= 2;
+                    count++;
+                }
+                ans = max(ans, count);
+            }
+            cout << ans << endl;
+        }
     }
     return 0;
 }

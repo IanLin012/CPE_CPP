@@ -1,7 +1,6 @@
 //一星必考題
  
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()

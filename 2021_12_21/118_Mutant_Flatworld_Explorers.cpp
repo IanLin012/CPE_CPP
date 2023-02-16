@@ -1,16 +1,30 @@
 //一星必考題
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
 {
-	int x, y;
-	while(cin >> x >> y)
+	int len=0, wid=0; // rectangular world
+	while(cin >> len >> wid)
 	{
-		string i; // i = instruction
-		cin >> i;
+		int x, y; // position
+		char i; // instruction
+		cin >> x >> y >> i;
+		string move;
+		cin >> move;
+		for(int a=0 ; a<move.size() ; a++)
+		{
+			if(move[a] == 'L')
+			{
+				if(i == 'N');
+				else if(i == 'S');
+				else if(i == 'E');
+				else if(i == 'W');
+			}
+			else if(move[a] == 'R')
+				;
+		}
 	}
 	return 0;
 } 

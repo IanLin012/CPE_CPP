@@ -1,7 +1,6 @@
 //一星必考題
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
@@ -14,7 +13,7 @@ int main()
 		else
 		{
 			long long data[100] = {0};
-			int a = 0; // a = address
+			int a = 0;
 			for(; n>=1 ; n/=m)
 			{
 				if(n!=1 && n%m == 0)

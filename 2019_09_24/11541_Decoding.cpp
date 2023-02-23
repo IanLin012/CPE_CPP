@@ -1,7 +1,9 @@
+// 一星題
+// 2019-09-24
+
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-
 using namespace std;
 
 int main()
@@ -21,15 +23,15 @@ int main()
 		for(int i=0 ; i<s.size() ;)
 		{
 			c = s[i];
-			cout << "DEBUG: " << c << endl;
 			if(c>='A' && c<='Z')
 				alph = s[i++];
-			else if(c>='0' && c<='9') {
+			else if(c>='0' && c<='9')
+			{
 				int j=0;
 				char nc[100]{};
-				while(c>='0' && c<='9') {
+				while(c>='0' && c<='9')
+				{
 					c = s[i+j];
-					cout << "DEBUG: " << c << endl;
 					nc[j++] = c;
 				} 
 				i += j;

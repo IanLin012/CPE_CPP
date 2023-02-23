@@ -1,4 +1,5 @@
-//一星必考題
+// 一星必考題
+// 2010-06-09
 
 #include <bits/stdc++.h>
 using namespace std;

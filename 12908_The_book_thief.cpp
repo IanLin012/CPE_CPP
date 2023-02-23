@@ -1,22 +1,18 @@
+//ä¸€æ˜Ÿé¡Œ
+// 2022-03-22
+
 #include <bits/stdc++.h>
-
 using namespace std;
-
-/*
-s = ¤Ö¤@­¶ªº­¶½XÁ`©M
-c = ­¶½X 
-sum = ¥¿½Tªº­¶½XÁ`©M 
-*/
 
 int main()
 {
-	long long s;
+	long long s; // å°‘ä¸€é çš„é ç¢¼ç¸½å’Œ
 	while(cin >> s)
 	{
 		if(s == 0)
 			break;
-		int c;
-		long long sum=0;
+		int c; // é ç¢¼
+		long long sum = 0; // æ­£ç¢ºçš„é ç¢¼ç¸½å’Œ
 		for(c=1 ; ; c++)
 		{
 			sum += c;

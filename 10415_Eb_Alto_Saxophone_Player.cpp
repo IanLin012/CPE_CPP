@@ -1,4 +1,5 @@
 // 一星必考題
+// 2020-12-22 / 2016-10-04 / 2010-10-11
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -53,8 +54,8 @@ int main()
 			strcpy(o, f); // 複製字串
 		}
 		cout << count[0];
-		for(int a=1 ; a<10 ; a++)
-			cout << " " << count[a];
+		for(int i=1 ; i<10 ; i++)
+			cout << " " << count[i];
 		cout << endl;	
 	}
 	return 0;

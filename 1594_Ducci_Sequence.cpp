@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
+// 2019-05-28
 
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -10,8 +11,8 @@ int main()
 	{
 		int size;
 		cin >> size;
-		int d[size] = {0}; // d = data
-		for(int a=0 ; a<size ; a++) // a = address
+		int d[size] = {0};
+		for(int a=0 ; a<size ; a++)
 		{
 			int n;
 			cin >> n;

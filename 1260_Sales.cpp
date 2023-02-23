@@ -1,5 +1,7 @@
-#include <bits/stdc++.h>
+// 一星題
+// 2021-12-21
 
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -12,7 +14,7 @@ int main()
 		cin >> n;
 		int A[n] = {0};
 		int B[n] = {0};
-		for(int a=0 ; a<n ; a++) // a = address
+		for(int a=0 ; a<n ; a++)
 			cin >> A[a];
 		for(int a1=1 ; a1<n ; a1++)
 		{

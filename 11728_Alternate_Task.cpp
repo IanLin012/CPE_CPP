@@ -1,5 +1,7 @@
-#include <bits/stdc++.h>
+// 一星題
+// 2021-12-21
 
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -11,7 +13,7 @@ int main()
 		int f[1001];
 		if(S == 0)
 			break;
-		for(int n=1 ; n<=S ; n++) // n = num
+		for(int n=1 ; n<=S ; n++)
 		{
 			f[n] = 0;
 			for(int factor=1 ; factor<=n ; factor++)

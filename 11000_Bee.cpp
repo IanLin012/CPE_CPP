@@ -1,13 +1,8 @@
+// 一星題
+// 2022-05-24
+
 #include<bits/stdc++.h>
 using namespace std;
-
-/*
-f = female
-m = male
-y = year
-fc = female_count
-mc = male_count
-*/
 
 int main()
 {
@@ -18,8 +13,8 @@ int main()
 			break;
 		else
 		{
-			long long f=1, m=0, fc=0, mc=0;
-			for(long long y=1 ; y<=N ; y++)
+			long long f=1, m=0, fc=0, mc=0; // female / male / female count / male count
+			for(long long y=1 ; y<=N ; y++) // year
 			{
 				fc = f;
 				mc = m;

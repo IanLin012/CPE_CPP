@@ -1,6 +1,7 @@
-//unsolved
-#include <bits/stdc++.h>
+// 一星題
+// 2022-10-18
 
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -9,10 +10,10 @@ int main()
 	while(cin >> s1)
 	{
 		cin >> s2;
-		char d1[101] = {0}; // d1 = s1 data
-		char d2[101] = {0}; // s2d = s2 data
+		char d1[101] = {0};
+		char d2[101] = {0};
 		
-		for(int a=0 ; a<s1.size() ; a++) // a = address
+		for(int a=0 ; a<s1.size() ; a++)
 			d1[a] = s1[a];
 		for(int a=0 ; a<s2.size() ; a++)
 			d2[a] = s2[a];

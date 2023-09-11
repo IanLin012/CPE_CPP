@@ -12,7 +12,6 @@ int main() {
         getline(cin, move);
         for(int i=0; i<move.size(); i++) {
             if(move[i]=='L') {
-                side[find(side, side+3, c)];
             }
         }
     }

@@ -1,5 +1,8 @@
 // 二星題
-#include <bits/stdc++.h>
+
+#include <iostream>
+#include <vector>
+#include <stack>
 using namespace std;
  
 int main() {

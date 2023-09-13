@@ -1,13 +1,11 @@
 // 一星必考題
-// 2023-03-21
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()  
-{
+int main() {
     long long n1, n2;
-    while(cin >> n1 >> n2)
-    {
+    while(cin >> n1 >> n2) {
         if(n1==0 && n2==0)
             break;
         string s1 = to_string(n1);
@@ -18,10 +16,8 @@ int main()
         else if(s1.size() < s2.size())
             s1.insert(0, s2.size()-s1.size(), '0');
         int times=0, ct=0;
-        for(int i=s1.size()-1 ; i>=0 ; i--)
-        {
-            if((s1[i]-'0')+(s2[i]-'0')+ct > 9)
-            {
+        for(int i=s1.size()-1 ; i>=0 ; i--) {
+            if((s1[i]-'0')+(s2[i]-'0')+ct > 9) {
                 times += 1;
                 ct = 1;
             }

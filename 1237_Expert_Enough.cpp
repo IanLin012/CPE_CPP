@@ -1,7 +1,6 @@
 // 一星題
-// 2020-05-26
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main()

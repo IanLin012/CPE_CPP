@@ -1,7 +1,6 @@
 // 一星題
-// 2016-03-22
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main()

@@ -1,24 +1,18 @@
 // 一星必考題
-// 2011-05-25
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     string text;
     int count = 0; // 計算引號出現次數
-    while(getline(cin, text)) // 一次讀取一行
-    {
-        for(int a=0 ; a<text.size() ; a++)
-        {
-            if(text[a]=='"' && count%2!=1)
-            {
+    while(getline(cin, text)) {// 一次讀取一行
+        for(int a=0 ; a<text.size() ; a++) {
+            if(text[a]=='"' && count%2!=1) {
                 cout << "``";
                 count++;
             }
-            else if(text[a]=='"' && count%2==1)
-            {
+            else if(text[a]=='"' && count%2==1) {
                 cout << "''";
                 count++;
             }

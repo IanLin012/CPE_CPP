@@ -1,11 +1,9 @@
 // 一星題
-// 2019-12-17
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
 	int n;
 	int Case1 = 0;
 	while(cin >> n)

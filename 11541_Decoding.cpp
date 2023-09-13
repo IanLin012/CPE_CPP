@@ -1,13 +1,11 @@
 // 一星題
-// 2019-09-24
 
 #include <iostream>
 #include <string>
 #include <stdlib.h>
 using namespace std;
 
-int main()
-{
+int main() {
 	int line;
 	cin >> line;
 	getchar();

@@ -1,5 +1,5 @@
 // 一星必考題
-// 2020-12-22
+
 #include <bits/stdc++.h>
 using namespace std;
 

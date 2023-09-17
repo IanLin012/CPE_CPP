@@ -14,21 +14,17 @@ int main() {
 	char alph;
 	long long num;
 	string s;
-	while(Case <= line)
-	{
+	while(Case <= line) {
 		getline(cin, s);
 		cout << "Case " << Case << ": ";
-		for(int i=0 ; i<s.size() ;)
-		{
+		for(int i=0 ; i<s.size() ;) {
 			c = s[i];
 			if(c>='A' && c<='Z')
 				alph = s[i++];
-			else if(c>='0' && c<='9')
-			{
+			else if(c>='0' && c<='9') {
 				int j=0;
 				char nc[100]{};
-				while(c>='0' && c<='9')
-				{
+				while(c>='0' && c<='9') {
 					c = s[i+j];
 					nc[j++] = c;
 				} 

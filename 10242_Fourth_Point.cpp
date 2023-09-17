@@ -8,8 +8,7 @@ using namespace std;
 => (三點座標與一點重複座標總和) - (一點重複座標*3) = 欲求座標
 */
 
-int main()
-{
+int main() {
 	double x[4], y[4];
 	while(cin >> x[0] >> y[0] >> x[1] >> y[1] >> x[2] >> y[2] >> x[3] >> y[3]) {
 		double a=0, b=0;

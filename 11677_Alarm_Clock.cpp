@@ -1,14 +1,11 @@
 // 一星題
-// 2019-12-17
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
 	int H1, M1, H2, M2;
-	while(cin >> H1 >> M1 >> H2 >> M2)
-	{
+	while(cin >> H1 >> M1 >> H2 >> M2) {
 		if(H1+M1+H2+M2 == 0)
 			break;
 		int ans = 0;

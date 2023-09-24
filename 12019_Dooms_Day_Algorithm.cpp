@@ -1,6 +1,6 @@
 // 一星必考題
-// 2021-03-23
-#include <bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 
 int main() {

@@ -1,19 +1,16 @@
-// 2019-05-28
 
-#include <bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
 	int T;
 	cin >> T;
-	while(T--)
-	{
+	while(T--) {
 		int size;
 		cin >> size;
 		int d[size] = {0};
-		for(int a=0 ; a<size ; a++)
-		{
+		for(int a=0 ; a<size ; a++) {
 			int n;
 			cin >> n;
 			d[a] = n;

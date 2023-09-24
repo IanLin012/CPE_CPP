@@ -1,13 +1,14 @@
-#include <bits/stdc++.h>
+
+
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-int main()  
-{
+int main() {
     long long N;
     long long seq[10000] = {0};
     int i=0, ct=1;
-    while(cin >> N)
-    {
+    while(cin >> N) {
         seq[i] = N;
         sort(seq, seq+ct);
         if(ct%2 == 1)

@@ -1,6 +1,6 @@
 //一星必考題
-// 2022-03-22
-#include <bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 
 /*
@@ -10,12 +10,10 @@ using namespace std;
 3. 所有步數 : (x+y+1)*(x+y)/2 - y + (x+y) = (x+y+1)*(x+y)/2 + x
 */
 
-int main()
-{
+int main() {
 	int n;
 	cin >> n;
-	for(int Case=1 ; Case<=n ; Case++)
-	{
+	for(int Case=1 ; Case<=n ; Case++) {
 		long long x1, y1, x2, y2, step1=0, step2=0;
 		cin >> x1 >> y1 >> x2 >> y2;
 		step1 = (x1+y1+1)*(x1+y1)/2 + x1;

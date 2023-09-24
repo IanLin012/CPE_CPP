@@ -1,15 +1,12 @@
 // 一星題
-// 2022-10-18
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int Case;
     cin >> Case;
-    for(int c=1 ; c<=Case ; c++)
-	{
+    for(int c=1 ; c<=Case ; c++) {
 		int d1, m1, y1, d2, m2, y2; // 1:now 2:birth
     	scanf("%2d/%2d/%4d\n%2d/%2d/%4d", &d1, &m1, &y1, &d2, &m2, &y2);
     	

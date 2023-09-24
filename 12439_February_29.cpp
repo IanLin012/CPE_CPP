@@ -1,14 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int T;
     cin >> T;
     string m;
     int d, y, c1=0, c2=0;
-    for(int i=1 ; i<=T ; i++)
-    {
+    for(int i=1 ; i<=T ; i++) {
         cin  >> m;
         scanf("%d, %d", &d, &y);
         if((m[0]=='J' && m[1]=='a') || (m[0]=='F')) y--;

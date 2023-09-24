@@ -1,22 +1,17 @@
 // 一星必考題
-// 2017-03-28
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
-    while(cin >> n)
-    {
+    while(cin >> n) {
         int b = 1; // bool
         int data, lastdata;
         int s[3000] = {0}; // 序列長度 < 3000
-        for(int i = 0 ; i < n ; i++)
-        {
+        for(int i = 0 ; i < n ; i++) {
             cin >> data;
-            if(i && (b==1))
-            {
+            if(i && (b==1)) {
                 int d = abs(data - lastdata); // differernce
                 if(d < 1 || d > (n-1) || s[d] > 0) b = 0;
                 s[d]++;

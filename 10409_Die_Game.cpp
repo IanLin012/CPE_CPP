@@ -1,6 +1,6 @@
 // 一星必考題
-// 2018-10-02
-#include <bits/stdc++.h>
+
+#include <iostream>
 using namespace std;
 
 int main()

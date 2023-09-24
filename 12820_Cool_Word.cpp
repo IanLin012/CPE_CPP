@@ -1,20 +1,17 @@
 // 一星題
-// 2019-12-17
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-int main()
-{
+int main() {
 	int n;
 	int Case1 = 0;
-	while(cin >> n)
-	{
+	while(cin >> n) {
 		Case1++;
 		int Case2 = 0;
 		int time = 0;
-		while(Case2 < n)
-		{
+		while(Case2 < n) {
 			Case2++;
 			int count[150] = {0};
 			string word;
@@ -24,8 +21,7 @@ int main()
 			sort(count+'a', count+'z'+1);
 			if(count['z'-2] == 0)
 				continue;
-			for(int i='a' ; i<='z'; i++)
-			{
+			for(int i='a' ; i<='z'; i++) {
 				if(count[i] == count[i-1] && count[i] != 0)
 					break;
 				else if(i == 'z')
